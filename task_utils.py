@@ -46,4 +46,3 @@ def calculate_progress(tasks=tasks):
     progress=(completed_count/len(tasks))*100
     return progress
     
-print(tasks)
