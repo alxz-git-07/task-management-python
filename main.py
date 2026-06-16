@@ -43,7 +43,7 @@ def main():
             print(f'\n Your current completeon progress is {progress:.2f}%')
         
         elif choice == "5":
-            print("Exiting the program...")
+            # print("Exiting the program...")
             break
         else:
             print("Invalid choice. Please try again.")

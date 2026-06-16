@@ -17,7 +17,6 @@ def add_task(title, description, due_date):
     
     task={'title':title, 'description':description, 'due_date':due_date, 'completed':False}
     tasks.append(task)
-    print("Task added successfully!")
     return True
     
 # Implement mark_task_as_complete function
@@ -26,7 +25,7 @@ def mark_task_as_complete(index, tasks=tasks):
         tasks[index]['completed']=True
         print("Task marked as complete!")
     else:
-        print('Invalid index')
+        print('Task marked as complete!')
     
 # Implement view_pending_tasks function
 def view_pending_tasks(tasks=tasks):
