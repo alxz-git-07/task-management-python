@@ -1,7 +1,7 @@
 from datetime import datetime
 
 def validate_task_title(title):
-    if not title or not title.strip():
+    if len(title)==0 :
         print('Error: Title cannot be empty')
         return False
     return True
@@ -11,11 +11,11 @@ def validate_task_description(description):
         print('Error: Description cannot be empty')
         return False
     return True
-    None    
+       
     
 def validate_due_date(due_date):
     if not due_date or not due_date.strip():
-        print('Error :Due_date cannot be empty')
+        raise ValueError('Error :Due_date cannot be empty')
     try:
         datetime.strptime(due_date, "%Y-%m-%d")
         return True

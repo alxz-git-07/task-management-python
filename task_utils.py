@@ -25,7 +25,7 @@ def mark_task_as_complete(index, tasks=tasks):
         tasks[index]['completed']=True
         print("Task marked as complete!")
     else:
-        print('Task marked as complete!')
+        print('Error: Invalid index')
     
 # Implement view_pending_tasks function
 def view_pending_tasks(tasks=tasks):
@@ -46,3 +46,4 @@ def calculate_progress(tasks=tasks):
     progress=(completed_count/len(tasks))*100
     return progress
     
+print(tasks)
