@@ -34,7 +34,7 @@ def view_pending_tasks(tasks=tasks):
     for i,task in enumerate(tasks):
         if not task['completed']:
             print(f"[{i}] {task['title']} - Due: {task['due_date']}")
-            print(f'Description: {task['description']}')
+            print(f"Description: {task['description']}")
             pending=True
     if not pending:
         print('No pending tasks ')
