@@ -1,7 +1,7 @@
 from datetime import datetime
 
 def validate_task_title(title):
-    if len(title)==0 :
+    if not title or not title.strip() :
         print('Error: Title cannot be empty')
         return False
     return True

@@ -22,6 +22,7 @@ def main():
                 due_date = input()
                 
                 if add_task(title,description,due_date):
+                    print("Task added successfully!")
                     break
                 print('Lets try that again\n')
             
