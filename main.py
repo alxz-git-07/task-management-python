@@ -4,6 +4,7 @@ None
 SHOW_MENU = False
 # Define the main function
 def main():
+    tasks=[]
     while True:
         if SHOW_MENU:
            print("Task Management System")
@@ -23,15 +24,16 @@ def main():
                 if add_task(title,description,due_date):
                     break
                 print('Lets try that again\n')
+            
 
         elif choice == "2":
             # show tasks to user
             # view_pending_tasks()
             try:
                 index = int(input("Enter the index of the task to complete: "))
-                mark_task_as_complete(index)
+                mark_task_as_complete(index,tasks)
             except ValueError:
-                print("Error: Please enter a valid number index.")
+                raise ValueError("Error: Please enter a valid number index.")
 
         elif choice =='3':
             view_pending_tasks()

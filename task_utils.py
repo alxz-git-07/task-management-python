@@ -4,7 +4,7 @@ from task_manager.validation import validate_task_title,validate_task_descriptio
 None
 
 # Define tasks list
-tasks = []
+tasks=[]
 
 # Implement add_task function
 def add_task(title, description, due_date):
