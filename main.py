@@ -26,7 +26,7 @@ def main():
 
         elif choice == "2":
             # show tasks to user
-            view_pending_tasks()
+            # view_pending_tasks()
             try:
                 index = int(input("Enter the index of the task to complete: "))
                 mark_task_as_complete(index)
